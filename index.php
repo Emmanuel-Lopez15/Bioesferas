@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Protege el medio ambiente</title>
+<link rel="stylesheet" href="estilos.css" />
+<script>
+  setInterval(() => {
+    document.getElementById("iframe-turbidez").src += "";
+    document.getElementById("iframe-ph").src += "";
+  }, 15000);
+</script>
+</head>
+
+<body>
+
+  <!-- Imagen de fondo y título -->
+  <header class="hero">
+    <h1>SÍNTESIS DE BIOESFERAS SEMICONDUCTORAS DE TiO₂–Fe₃O₄ DOPADAS CON AgNPs A BASE DE BIOPOLÍMEROS PARA LA REMOCIÓN DE CONTAMINANTES ORGÁNICOS EN SOLUCIONES ACUOSAS</h1>
+  </header>
+
+  <main>
+    <!-- Botones para cambiar pestañas -->
+    <div class="menu_cuadro">
+      <button data-target="queHacemos" class="active a">Qué Hacemos</button>
+      <button data-target="proyecto" class="b">Proyecto</button>
+      <button data-target="procedimiento" class="c">Procedimiento</button>
+      <button data-target="monitoreo" class="d">Monitoreo</button>
+    </div>
+
+    <!-- Contenido de cada pestaña -->
+    <div class="tabs">
+      <div class="tab active" id="queHacemos">
+        <h2>Qué Hacemos</h2>
+        <p>
+          Desarrollamos un <strong>biogel fotocatalítico</strong> a base de alginato de sodio, 
+          dióxido de titanio (TiO₂), magnetita (Fe₃O₄), plata metálica (Ag⁰), carbón activado 
+          y recubrimiento con quitosano, reforzado con glutaraldehído (0.05%). 
+          Esta formulación mejorada incrementa la <strong>estabilidad, resistencia y eficiencia</strong> 
+          del material, permitiendo su <strong>recuperación magnética</strong> y su reutilización en múltiples ciclos.
+        </p>
+        <br>
+        <p>
+          Las bioesferas aprovechan la energía de la <strong>luz solar</strong> para degradar contaminantes orgánicos 
+          y microorganismos en el agua, mientras que el carbón activado y el APG (alquil poliglucósido) 
+          favorecen la adsorción y dispersión de compuestos. 
+          El quitosano aporta propiedades antimicrobianas y la magnetita potencia la fotocatálisis 
+          al mismo tiempo que facilita la separación con un imán.
+        </p><br>
+        <p>
+          Una de sus principales ventajas es la <strong>reutilización</strong>, ya que las esferas conservan su estructura 
+          y desempeño tras varios ciclos de uso, reduciendo costos y evitando residuos secundarios. 
+          Esto convierte a nuestro sistema en una alternativa práctica frente a métodos tradicionales 
+          de purificación que suelen ser más caros y menos amigables con el medio ambiente.
+        </p>
+        <br>
+        <p>
+          El sistema también integra <strong>sensores de pH y turbidez</strong> conectados a un <strong>ESP32</strong>, 
+          que transmiten los datos en tiempo real a la nube mediante <strong>ThingSpeak</strong>. 
+          De esta forma, es posible llevar un <strong>monitoreo remoto y constante</strong> de la calidad del agua, 
+          permitiendo evaluar la eficiencia del proceso sin intervención directa.
+        </p>
+        <br>
+        <p>
+          Con esta combinación de <em>nanotecnología, biopolímeros y monitoreo inteligente</em>, 
+          ofrecemos una solución <strong>sustentable, accesible y de bajo impacto ambiental</strong> 
+          que contribuye al acceso a agua limpia en comunidades vulnerables y fomenta un modelo 
+          de economía circular.
+        </p>
+        <br>
+
+        <img src="esferas_biogel.jpg" alt="Esferas de biogel" class="imagen-proyecto" />
+        <h3>Relación con los ODS</h3>
+          <p>
+            Este proyecto se alinea directamente con los <strong>Objetivos de Desarrollo Sostenible</strong> porque responde 
+            a problemas ambientales y sociales concretos:
+          </p>
+          <br>
+          <ul>
+            <li><strong>ODS 6 (Agua limpia y saneamiento):</strong> porque las bioesferas permiten mejorar la calidad del agua,
+              eliminando contaminantes y microorganismos nocivos.</li>
+            <li><strong>ODS 9 (Industria, innovación e infraestructura):</strong> ya que se promueve la creación de un prototipo 
+              innovador, accesible y escalable que puede implementarse en comunidades.</li>
+            <li><strong>ODS 12 (Producción y consumo responsables):</strong> al usar materiales biodegradables y fomentar la 
+              reutilización, se reducen residuos y se aprovechan recursos de manera más eficiente.</li>
+            <li><strong>ODS 13 (Acción por el clima):</strong> al disminuir la necesidad de procesos industriales contaminantes 
+              para el tratamiento de agua y promover soluciones locales, se contribuye a la mitigación de impactos ambientales.</li>
+          </ul>
+
+          <img src="ods.png" alt="ods" class="imagen-proyecto-ods" />
+
+      </div>
+
+      <div class="tab" id="proyecto">
+        <h2>Proyecto</h2>
+
+        <h3>Justificación</h3>
+        <p>
+          La contaminación del agua por colorantes y compuestos orgánicos representa un problema ambiental y de salud pública,
+          especialmente en comunidades con acceso limitado a tecnologías de tratamiento.
+        </p>
+        <p>
+          Este proyecto propone una solución rentable, reproducible y sustentable mediante un biocompuesto a base de alginato de sodio,
+          dióxido de titanio (TiO₂), nanopartículas de plata (Ag) y carbón activado en polvo. Este sistema es biodegradable y permite
+          eliminar contaminantes orgánicos del agua de manera eficiente, sin infraestructura costosa.
+        </p>
+
+        <h3>Objetivo general</h3>
+        <p>Desarrollar un sistema fotocatalítico basado en biogel con sensores de pH y turbidez, y visualización web.</p>
+
+        <h3>Objetivos específicos</h3>
+        <ul>
+          <li>Sintetizar esferas de gel con TiO₂, Ag y carbón activado</li>
+          <li>Programar ESP32 para monitoreo en tiempo real</li>
+          <li>Desarrollar página web con gráficas y contenido informativo</li>
+          <li>Evaluar eficiencia en diferentes tipos de agua</li>
+          <li>Analizar la reutilización de las esferas</li>
+          <li>Relacionar el proyecto con los Objetivos de Desarrollo Sostenible</li>
+        </ul>
+
+        <h3>Conclusión</h3>
+        <p>
+          El desarrollo del biogel fotocatalítico con monitoreo remoto representa un avance significativo en el tratamiento de aguas contaminadas,
+          especialmente aquellas con colorantes orgánicos como el azul de metileno.
+        </p>
+        <p>
+          Los resultados experimentales demostraron que el sistema es eficaz, sostenible y adaptable a contextos reales con recursos limitados.
+          Se logró reducir la turbidez y la coloración del agua sin alterar significativamente su pH, utilizando únicamente luz solar como fuente de activación.
+        </p>
+
+        <img src="metadologia.png" alt="Esquema del sistema" class="imagen-proyecto-meta" />
+
+        <!-- Cambios agosto 2025 -->
+        <div class="divider">Cambios agosto 2025</div>
+          <h3>Justificación</h3>
+          <p>
+            La necesidad de soluciones sostenibles para el tratamiento de agua se mantiene vigente, 
+            especialmente en comunidades con recursos limitados donde el acceso a agua potable es un desafío constante. 
+            Este proyecto no solo recupera la idea de generar bioesferas biodegradables, 
+            sino que integra nuevos componentes como <strong>magnetita (Fe₃O₄)</strong>, <strong>quitosano</strong>, 
+            <strong>APG</strong> y <strong>glutaraldehído</strong>. Estos materiales refuerzan la estabilidad de las esferas, 
+            prolongan su vida útil y, además, permiten su recuperación magnética y reutilización en múltiples ciclos.
+          </p>
+          <p>
+            La incorporación de biopolímeros como el quitosano aporta propiedades antimicrobianas y estabilidad mecánica, 
+            mientras que la magnetita no solo mejora la fotocatálisis, sino que facilita la separación del material del agua 
+            una vez concluido el proceso. En conjunto, estos elementos permiten desarrollar una alternativa práctica, 
+            económica y ambientalmente responsable para la remoción de contaminantes en agua, 
+            atendiendo problemas reales de salud y sostenibilidad.
+          </p>
+
+          </br>
+
+          <h3>Objetivo general</h3>
+          <p>
+            Sintetizar bioesferas fotocatalíticas con TiO₂, Fe₃O₄, AgNPs, carbón activado y recubrimiento polimérico,
+            con capacidad de recuperación magnética y alta eficiencia de degradación de contaminantes orgánicos y microbiológicos.
+          </p>
+
+          </br>
+
+          <h3>Objetivos específicos</h3>
+          <ul>
+            <li>Optimizar la formulación de las bioesferas con nuevos compuestos</li>
+            <li>Evaluar la eficiencia fotocatalítica en distintos tipos de agua</li>
+            <li>Comprobar la recuperación magnética</li>
+            <li>Analizar la estabilidad estructural y reutilización en múltiples ciclos</li>
+            <li>Validar la seguridad ambiental y biodegradabilidad</li>
+          </ul>
+
+          </br>
+
+          <h3>Conclusión</h3>
+          <p>
+            Aunque se añadieron nuevos elementos, el proyecto mantiene su enfoque sustentable y accesible.
+            El refuerzo con magnetita y biopolímeros amplía la vida útil de las bioesferas y su eficiencia en la eliminación de contaminantes.
+            Además, al ser recuperables y reutilizables, se promueve un modelo de economía circular y de bajo impacto ambiental.
+          </p>
+
+          <img src="metodologia_nueva.png" alt="metodología nueva" class="imagen-proyecto-meta" />
+
+      </div>
+    </div>
+
+
+      <div class="tab" id="procedimiento">
+        <h2>Procedimiento</h2>
+
+        <h3>Preparación del biogel</h3>
+        <p>Se disuelven 2g de alginato en 25mL de agua destilada, se agregan 0.1g de TiO₂, 0.005g de Ag y 0.05g de carbón activado. Se gotea la mezcla sobre solución de CaCl₂ para formar esferas.</p>
+        <img src="preparacion.jpg" alt="Preparación del biogel" class="imagen-proyecto" />
+
+        <h3>Montaje del monitoreo</h3>
+        <p>El ESP32 se conecta a sensores de pH y turbidez y se programa con Arduino IDE para enviar datos a ThingSpeak.</p>
+        <img src="monitoreo_circuito.jpg" alt="Conexión del ESP32" class="imagen-proyecto" />
+
+        <h3>Desarrollo web</h3>
+        <p>Se diseñó una web interactiva que muestra las gráficas de datos del sensor en tiempo real y explica el proceso. Estas en ella !</p>
+
+        <h3>Ejecución</h3>
+        <p>Las esferas se colocaron en agua contaminada con azul de metileno al 0.02%, bajo luz solar o UV. Se monitorearon pH, turbidez y color.</p>
+        <img src="ejecucion.jpg" alt="Pruebas de fotocatálisis" class="imagen-proyecto" />
+
+        <h3>Pruebas experimentales</h3>
+        <ul>
+          <li><strong>Prueba 1 – Azul de metileno:</strong> Tratamiento durante 3 horas bajo luz UV. Se redujo notablemente la coloración azul.</li>
+          <li><strong>Prueba 2 – Colorante rosa:</strong> Tratamiento durante 1 hora y 30 minutos. Se observó rápida degradación del color.</li>
+          <li><strong>Prueba 3 – Agua con tierra:</strong> Tratamiento de 2 horas. Se redujo la turbidez, validando la adsorción de partículas.</li>
+        </ul>
+
+        <div class="graf-container">
+          <img src="prueba_1.jpg" alt="Prueba azul de metileno" class="imagen-proyecto" />
+          <img src="prueba_3.jpg" alt="Prueba agua con tierra" class="imagen-proyecto" />
+        </div>
+        <img src="prueba_2.jpg" alt="Prueba colorante rosa" class="imagen-proyecto" />
+
+        <!-- Mejoras agosto 2025 -->
+
+        <div class="divider">Mejoras agosto 2025</div>
+
+        <h3>Nueva formulación</h3>
+        <p>
+          Como resultado de la etapa de optimización realizada en agosto de 2025, se incorporaron nuevos componentes
+          que fortalecen la matriz polimérica y amplían la eficiencia del sistema fotocatalítico. 
+          Estas mejoras buscan resolver problemas observados en versiones anteriores, como pérdida de firmeza o dificultad
+          en la recuperación de las esferas.
+        </p>
+        <br>
+        <ul>
+          <li><strong>Magnetita (Fe₃O₄):</strong> permite la recuperación magnética de las bioesferas y actúa como co-catalizador redox, 
+              potenciando la generación de radicales oxidantes.</li>
+          <li><strong>Microencapsulado de peróxido de carbamida:</strong> prolonga la liberación de especies oxidantes, 
+              asegurando una acción más duradera durante el tratamiento del agua.</li>
+          <li><strong>Alquil poliglucósido (APG):</strong> tensioactivo no iónico y biodegradable que mejora la dispersión 
+              de los componentes activos en la matriz.</li>
+          <li><strong>Quitosano:</strong> incrementa la estabilidad estructural y otorga propiedades antimicrobianas adicionales 
+              gracias a su interacción con membranas celulares.</li>
+          <li><strong>Glutaraldehído (0.05%):</strong> actúa como agente reticulante suave, reforzando la matriz sin comprometer 
+              la biodegradabilidad del sistema.</li>
+        </ul>
+
+        </br>
+
+        <h3>Conclusión</h3>
+        <p>
+          Gracias a estas mejoras, las bioesferas presentan una mayor resistencia mecánica, 
+          una eficiencia fotocatalítica superior y la posibilidad de ser reutilizadas en múltiples ciclos 
+          sin pérdida significativa de rendimiento. 
+          Además, se conserva su carácter biodegradable y sustentable, alineado con los principios de innovación responsable.
+        </p>
+
+        </br>
+
+        <h3>Relación con el procedimiento</h3>
+        <p>
+          Esta nueva formulación se integra en la sección de <em>Procedimiento</em> como la versión más actualizada del método de síntesis. 
+          A diferencia de los ensayos iniciales, ahora las bioesferas no solo incorporan TiO₂, AgNPs y carbón activado, 
+          sino también estos aditivos que refuerzan su estabilidad y amplían su funcionalidad. 
+          De esta manera, el procedimiento evoluciona para ofrecer un prototipo más completo, eficiente y con mayor aplicabilidad práctica.
+        </p>
+
+        <img src="magne.png" alt="nueva formula" class="imagen-proyecto" />
+
+        
+      </div>
+
+      <div class="tab" id="monitoreo">
+        <h2>Monitoreo</h2>
+        <p>Gracias al monitoreo remoto con ESP32 y ThingSpeak, los datos se reflejan en tiempo real en esta página, permitiendo evaluar el proceso sin intervención directa.</p>
+        <br>
+
+        <h2>Gráficas</h2>
+        <div class="graf-container">
+          <div class="grafica">
+            <h3>Gráfica de Turbidez</h3>
+            <iframe id="iframe-turbidez" width="100%" height="260"
+              src="https://thingspeak.com/channels/2970789/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60"></iframe>
+          </div>
+
+          <div class="grafica">
+            <h3>Gráfica de pH</h3>
+            <iframe id="iframe-ph" width="100%" height="260"
+              src="https://thingspeak.com/channels/2970789/charts/2?bgcolor=%23ffffff&color=%23008000&dynamic=true&results=60"></iframe>
+          </div>
+<br>
+          <h2>Pruebas de limpieza</h2>
+          <p>
+            Durante las pruebas en agua contaminada con tierra, jabón y colorantes como azul de metileno, 
+            las bioesferas fotocatalíticas lograron una <strong>reducción visible de la turbidez</strong> en pocas horas. 
+            Después de 15 horas de tratamiento, el agua presentó una notable claridad y ausencia de residuos sólidos, 
+            confirmando la eficiencia del sistema.
+         
+
+         <div class="graf-container">
+          <img src="agua_sucia.png" alt="Prueba azul de metileno" class="imagen-proyecto" />
+          <img src="agua_limpia.png" alt="Prueba agua con tierra" class="imagen-proyecto" />
+        </div>
+          </p>
+
+<br>
+          <h2>Pruebas de absorbancia</h2>
+          <p>
+            Los análisis espectrofotométricos mostraron una <strong>disminución de más del 87% en los picos de absorbancia</strong> 
+            asociados a compuestos orgánicos y colorantes. Esto indica que las bioesferas no solo clarifican el agua, 
+            sino que también <strong>degradan químicamente</strong> los contaminantes presentes mediante fotocatálisis.
+          
+          <img src="absorbancia_nueva.png" alt="Resultado 2" class="imagen-proyecto" />
+          </p>
+          
+          <h2>Prueba microbiológica</h2>
+          <p>
+            El análisis microbiológico evidenció una <strong>reducción del 93.3% de coliformes totales</strong> 
+            y del <strong>97.5% de coliformes fecales</strong> tras el tratamiento con bioesferas. 
+            Estos resultados confirman la capacidad del prototipo no solo para eliminar contaminantes químicos, 
+            sino también para mejorar la <strong>calidad sanitaria del agua</strong>.
+
+                    <img src="microbio.png" alt="Resultado 3" class="imagen-proyecto-micro" />
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Proyecto BioGel </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
